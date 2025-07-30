@@ -1,4 +1,3 @@
-import time
 import requests
 from settings import TOKEN
 
@@ -40,4 +39,5 @@ while True:
     last_update_id = result[-1]['update_id']
     with open('last_update.txt', 'w') as f:
         f.write(f'{last_update_id}')
-
+        
+    
