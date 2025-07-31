@@ -4,6 +4,5 @@ from settings import TOKEN
 
 url = f'https://api.telegram.org/bot{TOKEN}/getMe'
 
-
-r = requests.get(url)
-pprint(r.url)
+response = requests.get(url)
+pprint(response.url)
